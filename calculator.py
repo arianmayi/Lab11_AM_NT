@@ -1,3 +1,7 @@
+#https://github.com/arianmayi/Lab11_AM_NT.git
+#Arian Mayi - Partner 1
+#Ngoc Tieu - Partner 2
+
 """
 calculator.py
 - Defines functions used to create a simple calculator

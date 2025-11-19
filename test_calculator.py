@@ -1,8 +1,13 @@
+#https://github.com/arianmayi/Lab11_AM_NT.git
+#Arian Mayi - Partner 1
+#Ngoc Tieu - Partner 2
+
 import unittest
-from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
+
+
     def test_add(self): # 3 assertions
         self.assertEqual(add(1,1), 2)
         self.assertEqual(add(-5,3), -2)
