@@ -3,6 +3,7 @@
 #Ngoc Tieu - Partner 2
 
 import unittest
+from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
@@ -21,14 +22,14 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
-        self.assertEqual(multiply(2,2),4)
-        self.assertEqual(multiply(-4,4),-16)
-        self.assertEqual(multiply(0,1),0)
+        self.assertEqual(mul(2,2),4)
+        self.assertEqual(mul(-4,4),-16)
+        self.assertEqual(mul(0,1),0)
 
     def test_divide(self): # 3 assertions
-        self.assertEqual(divide(2,2),1)
-        self.assertEqual(divide(4,2),2)
-        self.assertEqual(divide(25,5),5)
+        self.assertEqual(div(2,2),1)
+        self.assertEqual(div(4,2),2)
+        self.assertEqual(div(25,5),5)
 
 
     ######## Partner 2
@@ -37,7 +38,7 @@ class TestCalculator(unittest.TestCase):
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     div(0, 5)
         with self.assertRaises(ZeroDivisionError):
-            divide(0, 5)
+            div(0, 5)
 
     def test_logarithm(self): # 3 assertions
         self.assertAlmostEqual(logarithm(8,2), math.log(8,2))
@@ -61,9 +62,9 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
 
     def test_hypotenuse(self): # 3 assertions
-        self.assertAlmostEqual(divide(3,4),5)
-        self.assertAlmostEqual(divide(5,12),13)
-        self.assertAlmostEqual(divide(8,15),17)
+        self.assertAlmostEqual(div(3,4),5)
+        self.assertAlmostEqual(div(5,12),13)
+        self.assertAlmostEqual(div(8,15),17)
 
 
 
