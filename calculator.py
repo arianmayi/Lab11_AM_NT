@@ -1,3 +1,7 @@
+#https://github.com/arianmayi/Lab11_AM_NT.git
+#Arian Mayi - Partner 1
+#Ngoc Tieu - Partner 2
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -22,9 +26,6 @@ def hypotenuse(a,b):
     except TypeError:
         raise ValueError
 
-def hypotenuse(a,b):
-    math.hypot(a,b)
-
 def add(a, b): 
     return a + b
 
@@ -35,7 +36,7 @@ def multiply(a,b):
     return a*b
 
 def divide(a,b):
-    if a == 0:
+    if b == 0:
         raise ZeroDivisionError
     return b/a
 
