@@ -43,7 +43,7 @@ def div(a,b):
         raise ZeroDivisionError
     return b/a
 
-def log(a,b):
+def logarithm(a,b):
     if a <= 1 or b <= 0:
         raise ValueError
     return math.log(a,b)
