@@ -1,8 +1,13 @@
+#https://github.com/arianmayi/Lab11_AM_NT.git
+#Arian Mayi - Partner 1
+#Ngoc Tieu - Partner 2
+
 import unittest
-from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
+
+
     def test_add(self): # 3 assertions
         self.assertEqual(add(1,1), 2)
         self.assertEqual(add(-5,3), -2)
@@ -15,12 +20,12 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 1
-     def test_multiply(self): # 3 assertions
+    def test_multiply(self): # 3 assertions
         self.assertEqual(multiply(2,2),4)
         self.assertEqual(multiply(-4,4),-16)
         self.assertEqual(multiply(0,1),0)
 
-     def test_divide(self): # 3 assertions
+    def test_divide(self): # 3 assertions
         self.assertEqual(divide(2,2),1)
         self.assertEqual(divide(4,2),2)
         self.assertEqual(divide(25,5),5)
@@ -46,7 +51,7 @@ class TestCalculator(unittest.TestCase):
     # ##########################
     
     ######## Partner 1
-     def test_log_invalid_argument(self): # 1 assertion
+    def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ValueError):
             logarithm(0,5)
 
@@ -55,14 +60,14 @@ class TestCalculator(unittest.TestCase):
     #     #     logarithm(0, 5)
     #     fill in code
 
-     def test_hypotenuse(self): # 3 assertions
+    def test_hypotenuse(self): # 3 assertions
         self.assertAlmostEqual(divide(3,4),5)
         self.assertAlmostEqual(divide(5,12),13)
         self.assertAlmostEqual(divide(8,15),17)
 
 
 
-     def test_sqrt(self): # 3 assertions
+    def test_sqrt(self): # 3 assertions
         with self.assertRaises(ValueError):
             square_root(-25)
 
